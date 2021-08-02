@@ -1,0 +1,21 @@
+:root {
+	--clr-white: #f0f0f0;
+	--clr-black: #121212;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--clr-white);
+	color: var(--clr-black);
+}
+
+.container {
+	width: 90%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
