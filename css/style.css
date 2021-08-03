@@ -91,6 +91,7 @@ a {
 
 .header-logo {
 	/* color: var(--clr-blue); */
+	z-index: 100;
 }
 
 .header-flex {
@@ -108,6 +109,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	cursor: pointer;
+	z-index: 50;
 }
 
 .bar {
@@ -117,8 +119,36 @@ a {
 	margin-top: 3px;
 }
 
+/* ADDING MOBILE MENU STYLING */
+
 .navbar-list {
-	display: none;
+	/* display: none */
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: var(--clr-black);
+	z-index: 20;
+	transition: all 0.3s ease-in-out;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navbar-list.active {
+  left: 0;
+  transition: all 0.3s ease-in-out;
+} 
+
+.navbar-list li {
+	padding-top: 1rem;
+}
+.navbar-list li a {
+	color: var(--clr-white);
+	font-size: 1.3rem;
 }
 
 /* banner area */
@@ -138,4 +168,44 @@ a {
 	max-width: 37ch;
 	font-weight: 300;
 	margin: 0 0 3em;
+}
+
+
+/* DESKTOP MOBILE MENU */
+
+@media(min-width: 600px) {
+	.header-flex {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.navbar-list {
+		height: auto;
+		width: auto;
+		position: static;
+		background: none;
+		transition: none;
+		z-index: auto;
+
+		flex-direction: row;
+		order: -1;
+		/* margin-right: 3em; */
+	}
+
+	.navbar-list li {
+		padding-top: 0;
+	}
+
+	.navbar-list > li {
+		padding-right: 1.2em;
+	}
+
+	.navbar-list li a {
+		color: var(--clr-black);
+		font-size: 1.5rem;
+	}
+
+	.navbar li a:hover {
+		border-bottom: 1px solid var(--clr-blue);
+	}
 }
