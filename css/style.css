@@ -265,6 +265,21 @@ section {
 	max-width: 29ch;
 	margin: 1.5em 0;
 }
+
+/* projects section */
+.projects {
+	display: grid;
+	gap: 4em;
+}
+
+.project-card-text {
+	color: var(--clr-grey);
+}
+
+.project-img {
+	border-radius: 4px;
+}
+
 /* DESKTOP MOBILE MENU */
 
 @media (min-width: 900px) {
