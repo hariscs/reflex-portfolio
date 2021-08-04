@@ -22,9 +22,9 @@ body {
 	line-height: 1.5;
 }
 
-::selection {
+/* ::selection {
 	background: var(--clr-blue);
-}
+} */
 
 img {
 	max-width: 100%;
@@ -60,7 +60,6 @@ section {
 	font-size: 1rem;
 	border-radius: 6px;
 	font-weight: 500;
-	width: 200px;
 	cursor: pointer;
 }
 
@@ -75,6 +74,7 @@ section {
 	background: var(--clr-blue);
 	color: var(--clr-white);
 	border: 1px solid var(--clr-blue);
+	width: 200px;
 }
 
 .btn-primary:hover,
@@ -84,6 +84,38 @@ section {
 }
 
 .btn-secondary {
+	color: var(--clr-blue);
+	border: 1px solid var(--clr-blue);
+	width: 200px;
+}
+
+.btn-card {
+	border: 0;
+	color: #828282;
+	background: #e0e0e0;
+	border-radius: 12px;
+	padding: 0.5em 1em;
+	font-family: inherit;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.btn-card:hover,
+.services-card:focus {
+	background: var(--clr-blue);
+	color: var(--clr-white);
+}
+
+.btn-submit {
+	background-color: var(--clr-blue);
+	color: var(--clr-white);
+	border: 1px solid var(--clr-blue);
+	margin-top: 1em;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+	background: 0;
 	color: var(--clr-blue);
 	border: 1px solid var(--clr-blue);
 }
@@ -278,6 +310,98 @@ section {
 
 .project-img {
 	border-radius: 4px;
+}
+
+/* testimonials section */
+.tests-title {
+	text-align: center;
+}
+
+.tests-text {
+	max-width: 37ch;
+	margin-bottom: 0.5em;
+}
+
+.tests-details {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	font-size: 0.9rem;
+}
+
+.tests-name {
+	margin-bottom: 0;
+}
+
+.tests-work {
+	margin-top: 0;
+}
+
+.tests-img {
+	width: 50px;
+	border-radius: 100vh;
+}
+
+/* contact us section */
+.contact-title {
+	text-align: center;
+}
+
+.contact label {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+.contact input,
+textarea {
+	display: block;
+	width: 100%;
+	padding: 1em;
+	border-radius: 6px;
+	border: 0;
+}
+
+/* footer section */
+.main-footer {
+	padding: 2em 0;
+	background: var(--clr-black);
+	color: var(--clr-white);
+}
+
+.footer-links {
+	color: var(--clr-white);
+}
+
+.email-us {
+	text-align: center;
+	margin: 2em 0 0;
+}
+
+.email {
+	color: var(--clr-blue);
+}
+
+.icons {
+	display: flex;
+	gap: 1em;
+}
+
+.footer-links:hover,
+.footer-links:focus {
+	color: var(--clr-blue);
+}
+
+.links {
+	margin: 2em 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.copyright {
+	text-align: center;
+	margin-bottom: 0;
 }
 
 /* DESKTOP MOBILE MENU */
