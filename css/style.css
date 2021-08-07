@@ -14,6 +14,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	background: var(--clr-white);
@@ -61,6 +65,9 @@ section {
 	border-radius: 6px;
 	font-weight: 500;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .banner-btn {
@@ -135,6 +142,7 @@ section {
 .header-logo {
 	/* color: var(--clr-blue); */
 	z-index: 100;
+	font-weight: 500;
 }
 
 .header-flex {
@@ -252,6 +260,7 @@ section {
 	padding: 2em;
 	cursor: pointer;
 	border-radius: 24px;
+	max-width: 400px;
 }
 
 .services-title {
@@ -396,6 +405,7 @@ textarea {
 	margin: 2em 0;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: 1em;
 }
 
@@ -407,6 +417,10 @@ textarea {
 /* DESKTOP MOBILE MENU */
 
 @media (min-width: 900px) {
+	body {
+		font-size: 18px;
+	}
+
 	.header-flex {
 		display: flex;
 		justify-content: space-between;
@@ -439,5 +453,49 @@ textarea {
 	.navbar-list li a {
 		color: var(--clr-black);
 		/* font-size: 1.5rem; */
+	}
+
+	/* showcase area */
+	.banner {
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	.banner > * {
+		width: 100%;
+	}
+
+	.banner-title {
+		font-size: 4.3rem;
+		max-width: 10ch;
+	}
+
+	/* about us section */
+	.about-text {
+		max-width: 50ch;
+	}
+
+	/* services */
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2em;
+		align-items: center;
+		justify-content: end;
+	}
+
+	/* testimonials */
+	.flex {
+		display: flex;
+		justify-content: center;
+		gap: 2em;
+	}
+
+	/* contact form */
+	.contact {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
