@@ -476,13 +476,21 @@ textarea {
 	}
 
 	/* services */
-
-	.grid {
+	.grid-services {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 20em);
 		gap: 2em;
 		align-items: center;
-		justify-content: end;
+		justify-content: center;
+	}
+
+	/* projects */
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, 32em);
+		gap: 2em;
+		align-items: center;
+		justify-content: center;
 	}
 
 	/* testimonials */
