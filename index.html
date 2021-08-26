@@ -4,18 +4,53 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Reflex Developers || Web Design & Development Agency</title>
 		<link rel="stylesheet" href="dist/style.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
-				<nav class="header__nav"></nav>
-				<div class="info">
-					Reflex Developers is a web design company. We help businesses grow by
-					launching cost effective and scalable web design projects. We
-					specialize in Front-End development, WordPress development, Responsive
-					web design, e-commerce & website maintenance services.
+				<nav class="header__nav">
+					<h2 class="header__logo">Reflex</h2>
+
+					<div class="header__links">
+						<a href="#">Home</a>
+						<a href="#">Services</a>
+						<a href="#">Projects</a>
+						<a href="#">Testimonials</a>
+					</div>
+
+					<a href="" class="header__cta btn">Get Started</a>
+
+					<a href="#" id="btnHamburger" class="header__menu hide-for-desktop">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</nav>
+				<div class="header__hero">
+					<h1 class="header__title">Get Help With Your Website</h1>
+					<p class="header__text">
+						We help transform your ideas into real-world applications that will
+						outperform your toughest competition and help you achieve your
+						strategic goals in a short period of time.
+					</p>
+					<form class="cta__form header__form">
+						<h3 class="cta__form--title"></h3>
+						<input type="text" />
+						<input type="text" />
+						<textarea name="" id=""></textarea>
+
+						<button>submit</button>
+					</form>
+
+					<a href="" class="btn mobile">Get Started</a>
 				</div>
 			</div>
 		</header>
@@ -23,34 +58,49 @@
 		<section class="services">
 			<div class="container">
 				<div class="services__info">
-					<h2 class="services__info--title">Reflex Web Developers</h2>
+					<h2 class="services__info--title">Our Services</h2>
 					<p class="services__info--text">
-						We help transform your ideas into real world applications that will
-						outperform your toughest competition and help you achieve your
-						strategic goals in short period of time.
+						Reflex offer services range from initial design to deployment
+						anywhere anytime.
 					</p>
 				</div>
 
 				<div class="services__cards">
 					<!-- card 1 -->
 					<div class="services__card">
-						<h3 class="services__card--title"></h3>
-						<p class="services__card--text"></p>
+						<h3 class="services__card--title">Frontend Development</h3>
+						<p class="services__card--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+							officia vel corrupti maxime aliquid? Velit minima, architecto
+							atque ullam rem.
+						</p>
 					</div>
 					<!-- card 2 -->
 					<div class="services__card">
-						<h3 class="services__card--title"></h3>
-						<p class="services__card--text"></p>
+						<h3 class="services__card--title">WordPress</h3>
+						<p class="services__card--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+							officia vel corrupti maxime aliquid? Velit minima, architecto
+							atque ullam rem.
+						</p>
 					</div>
 					<!-- card 3 -->
 					<div class="services__card">
-						<h3 class="services__card--title"></h3>
-						<p class="services__card--text"></p>
+						<h3 class="services__card--title">E-commerce</h3>
+						<p class="services__card--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+							officia vel corrupti maxime aliquid? Velit minima, architecto
+							atque ullam rem.
+						</p>
 					</div>
 					<!-- card 4 -->
 					<div class="services__card">
-						<h3 class="services__card--title"></h3>
-						<p class="services__card--text"></p>
+						<h3 class="services__card--title">Website Maintenance</h3>
+						<p class="services__card--text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+							officia vel corrupti maxime aliquid? Velit minima, architecto
+							atque ullam rem.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -60,17 +110,21 @@
 		<section class="tests">
 			<div class="container">
 				<div class="tests__info">
-					<h2 class="tests__info--title"></h2>
-					<p class="tests__info--text"></p>
+					<h2 class="tests__info--title">Testimonials</h2>
+					<p class="tests__info--text">What our clients are saying</p>
 				</div>
 
 				<div class="tests__cards">
 					<div class="tests__card">
-						<p class="tests__card--text"></p>
+						<p class="tests__card--text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+							Inventore perspiciatis perferendis aspernatur quasi debitis!
+							Distinctio consectetur eum modi amet itaque.
+						</p>
 						<div class="tests__profile">
 							<img src="" alt="" class="tests__profile--img" />
-							<h4 class="tests__profile--name"></h4>
-							<p class="tests__profile--info"></p>
+							<h4 class="tests__profile--name">Richard mie</h4>
+							<p class="tests__profile--info">Founder</p>
 						</div>
 					</div>
 				</div>
@@ -80,15 +134,37 @@
 		<!-- projects section -->
 		<section class="projects">
 			<div class="container">
-				<h2 class="projects__title"></h2>
-				<div class="projects__card"></div>
+				<h2 class="projects__title">Our Projects</h2>
+				<div class="projects__card">
+					<img src="" alt="" />
+				</div>
+				<div class="projects__card">
+					<img src="" alt="" />
+				</div>
+				<div class="projects__card">
+					<img src="" alt="" />
+				</div>
+				<div class="projects__card">
+					<img src="" alt="" />
+				</div>
+				<div class="projects__card">
+					<img src="" alt="" />
+				</div>
+				<div class="projects__card">
+					<img src="" alt="" />
+				</div>
 			</div>
 		</section>
 
 		<!-- cta section -->
 		<section class="cta">
 			<div class="container">
-				<div class="cta__info"></div>
+				<div class="cta__info">
+					<h2 class="cta__info--title">
+						100% guaranteed <span>satisfaction</span>
+					</h2>
+					<p class="cta__info--text">Lorem ipsum dolor sit amet consectetur.</p>
+				</div>
 				<form class="cta__form">
 					<h3 class="cta__form--title"></h3>
 					<input type="text" />
@@ -102,7 +178,18 @@
 
 		<!-- footer -->
 		<footer class="footer">
-			<div class="container"></div>
+			<div class="container">
+				<h2 class="footer__logo">Reflex Developers</h2>
+				<div class="footer__links">
+					<a href="">facebook</a>
+					<a href="">twitter</a>
+					<a href="">pinterest</a>
+					<a href="">instagram</a>
+				</div>
+				<p class="footer__copyright">
+					Copyright 2021 &copy; Reflex Web Developers
+				</p>
+			</div>
 		</footer>
 	</body>
 </html>

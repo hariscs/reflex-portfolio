@@ -1,0 +1,56 @@
+.header {
+	background: rgb(0, 43, 68);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 43, 68, 1) 70%,
+		rgba(236, 102, 106, 1) 70%
+	);
+	color: $white;
+	padding: 2em 0;
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5em 0;
+	}
+
+	&__menu {
+		// mobile menu
+
+		> span {
+			display: block;
+			width: 26px;
+			height: 2px;
+			background: $darkBlue;
+			transition: all 300ms ease-in-out;
+			transform-origin: 3px 1px;
+
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&__cta {
+		display: none;
+	}
+
+	&__links {
+		display: none;
+	}
+
+	&__title {
+		margin: 1em 0;
+		font-weight: 400;
+		max-width: 11ch;
+	}
+
+	&__text {
+		max-width: 25ch;
+	}
+
+	&__form {
+		display: none;
+	}
+}
