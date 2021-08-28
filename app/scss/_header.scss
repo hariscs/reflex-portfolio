@@ -35,6 +35,9 @@
 	&__cta {
 		display: none;
 	}
+	// hero
+	&__hero {
+	}
 
 	&__links {
 		display: none;
@@ -43,14 +46,22 @@
 	&__title {
 		margin: 1em 0;
 		font-weight: 400;
+		font-size: 2.5rem;
 		max-width: 11ch;
 	}
 
 	&__text {
 		max-width: 25ch;
+		color: $white;
 	}
 
 	&__form {
 		display: none;
 	}
+}
+
+.btn-mobile {
+	border-radius: 8px;
+	background: $white;
+	color: $darkBlue;
 }

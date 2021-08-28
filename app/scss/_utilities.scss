@@ -1,0 +1,24 @@
+.flex {
+	display: flex;
+
+	&__f-d-c {
+		flex-direction: column;
+	}
+
+	&__a-i-c {
+		align-items: center;
+	}
+
+	&__j-c-c {
+		justify-content: center;
+	}
+}
+
+.m-lr-a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mr-b {
+	margin-bottom: 0.5em;
+}
